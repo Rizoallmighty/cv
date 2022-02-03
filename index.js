@@ -144,3 +144,29 @@ for (var i = 0; i < myCoding.length; i++) {
   codeList.innerHTML += `<li>${myCoding[i].grade}</li>`;
   codeList.innerHTML += `<li>${myCoding[i].learned}</li>`;
 }
+
+let languageList = document.getElementById("language-list");
+
+const myLanguages = [
+  {
+    language: "Norsk hovedmål + sidemål",
+    grade: "Meget godt flytende muntlig og skriftlig",
+    usage: "Dagligtale, jobb, studie",
+  },
+  {
+    language: "Engelsk",
+    grade: "Godt flytende muntlig og skriftlig",
+    usage: "Fritid, jobb, studie",
+  },
+  {
+    language: "Spansk",
+    grade: "Noe muntlig, lite skriftlig",
+    usage: "Jobb, fritid",
+  },
+];
+
+for (var i = 0; i < myLanguages.length; i++) {
+  languageList.innerHTML += `<li>${myLanguages[i].language}</li>`;
+  languageList.innerHTML += `<li>${myLanguages[i].grade}</li>`;
+  languageList.innerHTML += `<li>${myLanguages[i].usage}</li>`;
+}
