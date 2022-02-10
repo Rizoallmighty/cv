@@ -91,39 +91,6 @@ for (var i = 0; i < myJobs.length; i++) {
   workList.innerHTML += `<li>${myJobs[i].time}</li>`;
 }
 
-let hobbiesList = document.getElementById("hobbies-list");
-
-const myHobbies = [
-  {
-    type: "Musikk",
-    depth:
-      "Jobb og hobby. Periodevise oppdrag henholdsvis sommer og jul. Gitar, piano, vokal og repetitør samt logic arbeid.",
-    tech: "Mac & Logic",
-  },
-  {
-    type: "Gaming",
-    depth:
-      "League of legends, Tft, Valheim, Pokemon, Super smash bros ultimate, Minecraft",
-    tech: "Laptopt/Stasjonær pc, Nintendo switch",
-  },
-  {
-    type: "Trening",
-    depth: "Volleyball, jogging, fotball, langrenn",
-    tech: "Strava",
-  },
-  {
-    type: "Tech",
-    depth: "Home-assist",
-    tech: "Roborock, Adax wifi, Bluedim, Google home, SmartThings, ",
-  },
-];
-
-for (var i = 0; i < myHobbies.length; i++) {
-  hobbiesList.innerHTML += `<li>${myHobbies[i].type}</li>`;
-  hobbiesList.innerHTML += `<li>${myHobbies[i].depth}</li>`;
-  hobbiesList.innerHTML += `<li>${myHobbies[i].tech}</li>`;
-}
-
 let codeList = document.getElementById("code-list");
 
 const myCoding = [
@@ -169,4 +136,37 @@ for (var i = 0; i < myLanguages.length; i++) {
   languageList.innerHTML += `<li>${myLanguages[i].language}</li>`;
   languageList.innerHTML += `<li>${myLanguages[i].grade}</li>`;
   languageList.innerHTML += `<li>${myLanguages[i].usage}</li>`;
+}
+
+let hobbiesList = document.getElementById("hobbies-list");
+
+const myHobbies = [
+  {
+    type: "Musikk",
+    depth:
+      "Jobb og hobby. Periodevise oppdrag henholdsvis sommer og jul. Gitar, piano, vokal og repetitør samt logic arbeid.",
+    tech: "Mac & Logic",
+  },
+  {
+    type: "Gaming",
+    depth:
+      "League of legends, Tft, Valheim, Pokemon, Super smash bros ultimate, Minecraft",
+    tech: "Laptopt/Stasjonær pc, Nintendo switch",
+  },
+  {
+    type: "Trening",
+    depth: "Volleyball, jogging, fotball, langrenn",
+    tech: "Strava",
+  },
+  {
+    type: "Tech",
+    depth: "Home-assist",
+    tech: "Roborock, Adax wifi, Bluedim, Google home, SmartThings, ",
+  },
+];
+
+for (var i = 0; i < myHobbies.length; i++) {
+  hobbiesList.innerHTML += `<li>${myHobbies[i].type}</li>`;
+  hobbiesList.innerHTML += `<li>${myHobbies[i].depth}</li>`;
+  hobbiesList.innerHTML += `<li>${myHobbies[i].tech}</li>`;
 }
